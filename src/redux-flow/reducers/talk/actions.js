@@ -1,0 +1,1 @@
+export const SEARCH_TOPICS = 'SEARCH_TOPICS'
