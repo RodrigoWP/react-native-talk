@@ -2,13 +2,16 @@ import { SEARCH_TOPICS } from './actions'
 
 const topicsMock = [
   {
-    name: 'Topic 1'
+    name: 'AsyncStorage',
+    screen: 'AsyncStorage'
   },
   {
-    name: 'Topic 2'
+    name: 'Style and Layout',
+    screen: 'StyleLayout'
   },
   {
-    name: 'Topic 3'
+    name: 'Recursos Nativos',
+    screen: 'NativeResources'
   }
 ]
 

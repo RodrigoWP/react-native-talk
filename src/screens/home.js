@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
+import { Button } from '../components'
 
 class Home extends PureComponent {
   navigateToTalkScreen = () => {
@@ -10,10 +11,12 @@ class Home extends PureComponent {
   render () {
     return (
       <View style={styles.container}>
-        <Text>React Native Talk</Text>
-        <TouchableOpacity onPress={this.navigateToTalkScreen}>
-          <Text>Navigate to talk screen</Text>
-        </TouchableOpacity>
+        <Text style={styles.title}>React Native</Text>
+        <Text style={styles.subtitle}>Learn once, write anywhere</Text>
+        <Button
+          label='Go to talk'
+          onPress={this.navigateToTalkScreen}
+        />
       </View>
     )
   }
@@ -23,7 +26,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    padding: 15
+  },
+
+  title: {
+    fontWeight: 'bold',
+    fontSize: 28,
+    color: '#3b495e'
+  },
+
+  subtitle: {
+    fontSize: 18,
+    color: '#8cc152'
   }
 })
 
