@@ -8,10 +8,6 @@ const topicsMock = [
   {
     name: 'Style and Layout',
     screen: 'StyleLayout'
-  },
-  {
-    name: 'Recursos Nativos',
-    screen: 'NativeResources'
   }
 ]
 

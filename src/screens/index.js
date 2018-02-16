@@ -3,7 +3,6 @@ import Home from './home'
 import Talk from './talk'
 import AsyncStorage from './async-storage'
 import StyleLayout from './style-layout'
-import NativeResources from './native-resources'
 
 export default StackNavigator({
   Home: {
@@ -26,12 +25,6 @@ export default StackNavigator({
   },
   StyleLayout: {
     screen: StyleLayout,
-    navigationOptions: {
-      header: null
-    }
-  },
-  NativeResources: {
-    screen: NativeResources,
     navigationOptions: {
       header: null
     }
